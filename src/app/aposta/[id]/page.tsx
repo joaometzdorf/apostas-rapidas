@@ -1,6 +1,6 @@
 "use client";
 
-import { supabase } from "@/app/utils/supabase";
+import { supabase } from "../../utils/supabase";
 import {
   AlarmClock,
   ArrowLeft,
