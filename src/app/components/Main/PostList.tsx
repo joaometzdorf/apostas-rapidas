@@ -7,7 +7,7 @@ import "./Main.css";
 const PostList = ({ posts }: { posts: PostCardProps[] }) => {
   return (
     <section className="section-cards">
-      {posts.map((post) => {
+      {(posts || []).map((post) => {
         return (
           <PostCard
             key={post.id}
