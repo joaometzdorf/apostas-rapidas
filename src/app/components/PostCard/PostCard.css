@@ -1,0 +1,142 @@
+.post-card-container {
+  border: 1px solid #ffc300;
+  box-shadow: 3px 3px 3px #00000027;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &:hover {
+    box-shadow: 4px 4px 4px #0000003c;
+  }
+
+  .category {
+    background-color: #ffc300;
+    border-radius: 9999px;
+    width: 60px;
+    text-align: center;
+
+    span {
+      color: #0f1729;
+      font-weight: 500;
+      font-size: 0.75rem;
+    }
+  }
+
+  .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h2 {
+      a {
+        color: #0f1729;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+
+        transition: color 0.4s;
+
+        &:hover {
+          color: #0f172991;
+        }
+      }
+    }
+
+    .calendar {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #6b7280;
+
+      svg {
+        height: 16px;
+        width: 16px;
+      }
+      span {
+        font-size: 0.9rem;
+      }
+    }
+
+    .teams {
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+      span {
+        background-color: #f3f4f6;
+        border-radius: 4px;
+        padding: 0.1rem 0.5rem;
+        color: #0f1729;
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .aposta-principal {
+    background-color: #f9fafb;
+    padding: 0.75rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .aposta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        font-size: 0.85rem;
+        color: #0f1729;
+
+        &:last-child {
+          background-color: #f3f4f6;
+          font-weight: 500;
+          border-radius: 4px;
+          padding: 0.1rem 0.4rem;
+        }
+      }
+    }
+    .aposta-segura {
+      h3 {
+        font-size: 1.05rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .analise-completa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+
+    a {
+      color: #0f1729;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.4s;
+
+      &:hover {
+        color: #0f172991;
+      }
+    }
+
+    svg {
+      color: #6b7280;
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
+
+.share-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
